@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <title>RSSchool CV</title>
+</head>
+<body>
+    <div class="wrapper">
+		<header class="header">
+			<div class="column">
+				<figure class="header__photo">
+					<img src="img/Photo.png" class="header__picture_outline" alt="Header avatar">
+				</figure>
+			</div>
+			<div class="column column_main column_header">
+				<h1 class="header__title">Gutman Sergei</h1>
+				<h3 class="header__subtitle">Beginner Front-End Developer</h3>
+			</div>
+		</header>
+		<main class="main">
+			<div class="column">
+				<section class="document-section contact">
+					<h2 class="document-title">Contacts</h2>
+					<ul class="contact__wrapper">
+						<li class="contact__list">
+							<div class="contact__image contact__image_github"></div>
+							<div class="contact__text">
+								<a href="https://github.com/SergeyGutman" target="_blank" class="contact__link">github.com/SergeyGutman</a>
+							</div>
+						</li>
+						<li class="contact__list">
+							<div class="contact__image contact__image_email"></div>
+							<div class="contact__text">
+								<a href="mailto:sergutman4@gmai.com" class="contact__link">sergutman4@gmail.com</a>
+							</div>
+						</li>
+                        <li class="contact__list">
+							<div class="contact__image contact__image_phone"></div>
+							<div class="contact__text">
+								<a href="tel:+79817571833" class="contact__link">+7(981)757-18-33</a>
+							</div>
+						</li>
+						<li class="contact__list">
+							<div class="contact__image contact__image_location"></div>
+							<div class="contact__text">
+								<p class="contact__paragraph">Russia, Saint Petersburg</p>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<section class="document-section education">
+					<h2 class="document-title">Education</h2>
+					<div class="education__block">
+						<div class="date">2012-2018</div>
+						<p class="education__text">Saint Petersburg Electrotechnical University "LETI"</p>
+					</div>
+					<div class="education__block">
+						<div class="date">2021</div>
+						<p class="education__text">RS School</p>
+					</div>
+				</section>
+				<section class="document-section skills">
+					<h2 class="document-title">Skills</h2>
+					<ul>
+						<li class="skills__block">
+							<p class="skills__text">HTML</p>
+						</li>
+						<li class="skills__block">
+							<p class="skills__text">CSS</p>
+						</li>
+						<li class="skills__block">
+							<p class="skills__text">JS basic</p>
+						</li>
+						<li class="skills__block">
+							<p class="skills__text">Git</p>
+						</li>
+					</ul>				
+				</section>
+				<section class="document-section languages">
+					<h2 class="document-title">Languages</h2>
+					<ul>
+						<li class="skills__text skills__block">English(A2)</li>
+                        <li class="skills__text skills__block">German(B)</li>
+                        <li class="skills__text skills__block">Russian(Native)</li>
+					</ul>
+				</section>
+			</div>	
+			<div class="column column_main">
+				<section class="document-section about_me">
+					<h2 class="document-title">About me</h2>
+					<p>
+						From 2017 to the present, I have been working as an engineer in the development of microwave devices.
+                        This year I got interested in front-end development. At the moment I am taking a course at RS School.
+                        I like challenging tasks. I consider myself non-conflict.
+                        I work well in a team. My goal is to gain knowledge in the field of front-end development.
+					</p>
+				</section>
+				<section class="document-section">
+					<h2 class="document-title">Work Experience</h2>
+					<div class="work__block">
+						<div>
+							<p class="work-text">
+								Unfortunately, this CV is my first job.
+                            </p>
+						</div>
+					</div>
+					<div class="work__block">
+						<h3 class="document-title">Code examples</h3>
+                        <a href="https://www.codewars.com/kata/555615a77ebc7c2c8a0000b8" target="_blank" class="contact__link">Vasya - Clerk</a>
+                        <pre><code>function tickets(peopleInLine){
+let bill25 = 0;
+let bill50 = 0;
+let sumVasyaMoney = 0;
+for (let i = 0; i < peopleInLine.length; i++) {
+    if (peopleInLine[i] == 25) {
+     bill25++;
+    } else if(peopleInLine[i] == 50) {
+        if(bill25 > 0) {
+          bill25--;
+          bill50++;
+        }else {
+          return 'NO';
+        }
+    } else if(peopleInLine[i] == 100) {
+        if(bill50 >= 1 && bill25 >= 1){
+          bill50--;
+          bill25--;
+        } else if (bill50 == 0 && bill25 >= 3){
+          bill25 -= 3;
+        } else {return 'NO'}
+    }
+   }
+return 'YES';
+}                       </code></pre>
+					</div>
+				</section>
+				<section class="document-section hobby">
+					<h2 class="document-title">Hobbies</h2>
+					<div class="hobby__block">
+				            <div>
+							    <p>Guitar</p>
+                                <p>Swimming</p>
+                                <p>Running</p>
+                                <p>Reading of books</p>
+							</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__inner">
+				<div class="footer__block">
+					<a href="https://github.com/SergeyGutman" target="_blank" class="footer__git footer__link">Git</a>
+				</div>
+				<div class="footer__block">
+					<div class="footer__text"><a href="https://rs.school/js/" target="_blank" class="footer__link"><img src="img/rs_school_js.svg" class="footer__image" alt="RS School"></a>2021</div>
+				</div>				
+				
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

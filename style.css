@@ -1,0 +1,352 @@
+/* CSS Reset start */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ul{
+    list-style: none;
+}
+/* CSS Reset end */
+
+/* lato-regular - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/lato-v20-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/lato-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/lato-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/lato-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/lato-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/lato-v20-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
+  }
+
+  /* lato-700 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/lato-v20-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/lato-v20-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/lato-v20-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/lato-v20-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('fonts/lato-v20-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/lato-v20-latin-700.svg#Lato') format('svg'); /* Legacy iOS */
+  }
+
+  /* lato-900 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: url('fonts/lato-v20-latin-900.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/lato-v20-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/lato-v20-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/lato-v20-latin-900.woff') format('woff'), /* Modern Browsers */
+         url('fonts/lato-v20-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/lato-v20-latin-900.svg#Lato') format('svg'); /* Legacy iOS */
+  }
+
+body{
+	width: 100%;
+	font-family: 'Lato';
+	color: black;
+}
+
+.wrapper{
+	max-width: 1200px;
+    margin: 0 auto;
+}
+
+.column{
+    width: 40%;
+    background-color: teal;
+    padding: 0 50px 0 70px;
+}
+
+.column_main{
+    width: 60%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.main{
+    display: flex;
+}
+
+.document-title{
+    padding-bottom: 30px;
+}
+
+.document-section{
+    padding-bottom: 50px;
+}
+
+.date{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: 'Lato';
+    padding: 2px 10px;
+    margin-bottom: 10px;
+}
+
+.document-list{
+    padding-left: 30px;
+}
+
+.document-text{
+    padding-bottom: 10px;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+    
+.header__photo{
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    width: 200px;
+    margin: 50px auto;
+    position: relative;   
+    }
+    
+.header__picture_outline{
+    border-radius: 50%;
+    width: 100%;
+    object-fit: cover;
+    border: 5px solid black;
+}
+
+.header__title{
+	font-family: 'Lato';
+	font-size: 50px;
+    border-bottom: 3px solid black;
+}
+	
+.header__subtitle{
+    font-size: 20px;    
+}
+
+.contact__list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+    
+.contact__image{
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.contact__image_github{
+    background-image: url(img/github.png);
+}
+    
+.contact__image_email{
+    background-image: url(img/gmail_logo.png);
+}
+
+.contact__image_phone{
+    background-image: url(img/phone.png);
+}
+
+.contact__image_location{
+    background-image: url(img/location.png);
+}
+
+.contact__link{
+    color: rgba(29, 27, 27, 0.973);
+    text-decoration: none;
+    transition: all .4s linear;
+}
+
+.contact__link:hover{
+    color: rgba(0, 0, 190, 0.973);
+}
+    
+.education__block{
+    margin-bottom: 30px;
+}
+   
+.education__text{
+    font-weight: 700;
+}
+
+.skills__block{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.skills__text{
+    margin-right: 15px;
+    font-weight: 700;
+}
+    
+.skills-list{
+    display: flex;
+    align-items: center;
+}
+    
+.work__block{
+    margin-bottom: 30px;
+}
+    
+.work__text{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.hobby__block{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+   
+
+
+.footer{
+    background-color: rgb(1, 65, 56);
+    padding: 10px 0;
+    text-align: center;
+}
+    
+.footer__inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.footer__git{
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+   
+.footer__text{
+    display: flex;
+    align-items: center;
+}
+
+.footer__image{
+    width: 70px;
+    margin: 0 10px;
+}
+
+.footer__link{
+    color: black;
+    margin-right: 10px;
+}
+
+
+    @media (max-width: 900px){
+        .column{
+            padding: 0 20px;
+        }
+        .column_main{
+            padding: 0 20px;
+        }
+        .header::before{
+            width: 200px;
+            height: 200px;
+        }
+        .header__avatar{
+            width: 200px;
+            height: 200px;
+        }
+        .header__avatar::after{
+            width: 50px;
+            height: 50px;
+            right: 4px;
+        }
+        .header__title{
+            font-size: 40px;
+        }
+    }
+    @media (max-width: 768px){
+        .work__info{
+            flex-direction: column;
+            align-items: baseline;
+        }
+    }
+    @media (max-width: 650px){
+        .main{
+            flex-direction: column;
+        }
+        .column{
+            width: 100%;
+        }
+        .document-section {
+            padding-bottom: 15px;
+        }
+        .document-title {
+            padding-bottom: 15px;
+        }
+        .about_me{
+            padding-top: 20px;
+        }
+    }
+    @media (max-width: 510px){
+        .header{
+            flex-direction: column;
+        }
+        .header__avatar{
+            margin: 20px auto;
+        }
+        .header__title{
+            text-align: center;
+        }
+        .header__subtitle{
+            text-align: center;
+            padding-bottom: 20px;
+        }
+    }
+    @media (max-width: 420px){
+        .footer__inner{
+            flex-direction: column;
+        }
+        .footer__block:nth-child(2){
+            margin-right: 0;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .footer__social{
+            margin-right: 0;
+        }
+    }
+    @media (max-width: 380px){
+        .education__block {
+            margin-bottom: 20px;
+        }
+        .work__block {
+            margin-bottom: 10px;
+        }
+        .hobby__wrapper{
+            flex-direction: column;
+        }
+        .hobby__row{
+            width: 100%;
+        }
+    }
