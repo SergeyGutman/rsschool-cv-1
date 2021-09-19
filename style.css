@@ -53,6 +53,10 @@ ul{
          url('fonts/lato-v20-latin-900.svg#Lato') format('svg'); /* Legacy iOS */
   }
 
+ html{
+    scroll-behavior: smooth;
+ } 
+
 body{
 	width: 100%;
 	font-family: 'Lato';
@@ -64,6 +68,82 @@ body{
     margin: 0 auto;
 }
 
+.header_menu-main{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.header__logo-pic{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-height: 60px;
+}
+
+.header__list{
+display: flex;
+flex-wrap: wrap;
+}
+
+.header__item{
+   margin-right: 30px; 
+}
+
+.header__item:last-child{
+    margin-right: 10px; 
+ }
+
+ .header__item:first-child{
+    margin-left: 10px; 
+ }
+ .header__link{
+     font-size: 20px;
+     line-height: 40px;
+     color: rgb(255, 255, 255);
+     text-decoration: none;
+ }
+ 
+ .header__link:hover, .header__link:focus, .header__link:active{
+     opacity: .75;
+ }
+
+ .header_menu-adapt{
+    background-color: black;
+    display: none;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: -185px;
+    bottom: 0;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.header_menu-adapt::after{
+    content: "";
+    display: flex;
+    width: 15px;
+    height: 15px;
+    background: url(img/menu_icon.png);
+    position: absolute;
+    right: 1px;
+    top: 1px;
+}
+
+.header_menu-adapt:hover{
+    left: 0;
+}
+    
+.header__item-adapt{
+   margin-left: 10px;
+}
+    
 .column{
     width: 40%;
     background-color: teal;
@@ -119,10 +199,10 @@ body{
     
 .header__photo{
     display: flex;
-    height: 200px;
+    height: 250px;
     justify-content: center;
-    width: 200px;
-    margin: 50px auto;
+    width: 250px;
+    margin: 30px auto;
     position: relative;   
     }
     
@@ -272,17 +352,17 @@ body{
             width: 200px;
             height: 200px;
         }
-        .header__avatar{
-            width: 200px;
-            height: 200px;
-        }
-        .header__avatar::after{
-            width: 50px;
-            height: 50px;
-            right: 4px;
-        }
+        
         .header__title{
             font-size: 40px;
+        }
+    }
+    @media (max-width: 810px){
+        .header_menu-adapt{
+            display: flex;
+        }
+        .header_menu-main{
+            display: none;
         }
     }
     @media (max-width: 768px){
@@ -323,30 +403,5 @@ body{
             padding-bottom: 20px;
         }
     }
-    @media (max-width: 420px){
-        .footer__inner{
-            flex-direction: column;
-        }
-        .footer__block:nth-child(2){
-            margin-right: 0;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .footer__social{
-            margin-right: 0;
-        }
-    }
-    @media (max-width: 380px){
-        .education__block {
-            margin-bottom: 20px;
-        }
-        .work__block {
-            margin-bottom: 10px;
-        }
-        .hobby__wrapper{
-            flex-direction: column;
-        }
-        .hobby__row{
-            width: 100%;
-        }
-    }
+   
+  
