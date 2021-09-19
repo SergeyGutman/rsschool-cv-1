@@ -170,31 +170,32 @@
 					<div class="work__block">
 						<h3 class="document-title">Code examples</h3>
                         <a href="https://www.codewars.com/kata/555615a77ebc7c2c8a0000b8" target="_blank" class="contact__link">Vasya - Clerk</a>
-                        <pre><code>function tickets(peopleInLine){
-let bill25 = 0;
-let bill50 = 0;
-let sumVasyaMoney = 0;
-for (let i = 0; i <peopleInLine.length; i++) {
-    if (peopleInLine[i] == 25) {
-     bill25++;
-    } else if(peopleInLine[i] == 50) {
-        if(bill25 > 0) {
-          bill25--;
-          bill50++;
-        }else {
-          return 'NO';
-        }
-    } else if(peopleInLine[i] == 100) {
-        if(bill50 >= 1 && bill25 >= 1){
-          bill50--;
-          bill25--;
-        } else if (bill50 == 0 && bill25 >= 3){
-          bill25 -= 3;
-        } else {return 'NO'}
-    }
-   }
-return 'YES';
-}                       </code></pre>
+                        <pre><code class="javascript">
+function tickets(peopleInLine){
+	let bill25 = 0;
+	let bill50 = 0;
+	let sumVasyaMoney = 0;
+	for (let i = 0; i &lt; peopleInLine.length; i++) {
+		if (peopleInLine[i] == 25) {
+			bill25++;
+		} else if(peopleInLine[i] == 50) {
+			if(bill25 > 0) {
+				bill25--;
+				bill50++;
+			}else {
+			return 'NO';
+			}
+		} else if(peopleInLine[i] == 100) {
+			if(bill50 >= 1 && bill25 >= 1){
+				bill50--;
+				bill25--;
+		} else if (bill50 == 0 && bill25 >= 3){
+				bill25 -= 3;
+		} else {return 'NO'}
+		}
+	}
+	return 'YES';
+}</code></pre>
 					</div>
 				</section>
 				<section class="document-section hobby">
